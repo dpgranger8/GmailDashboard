@@ -1,4 +1,4 @@
-// Roboto font sampler below
+// How to use Roboto font examples below
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
@@ -16,16 +16,33 @@
 }
 
 body {
-    background-image: url(floral-background.jpg);
+    //These properties make the background image scale dynamically based on viewport width and height
+    background-image: url(art.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
 .topNav {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
     font-size: 30px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
-// spacer {
-//     margin: 0.25rem;
-// }
+.logo {
+    margin: 0 0.5rem;
+}
+
+.searchBar {
+    border-radius: 1000px;
+    background-color: rgba($color: white, $alpha: 0.4);
+    backdrop-filter: blur(2px);
+    width: 60%;
+    height: 50px;
+}

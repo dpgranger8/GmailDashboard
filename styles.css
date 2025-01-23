@@ -3,12 +3,33 @@
 }
 
 body {
-  background-image: url(floral-background.jpg);
+  background-image: url(art.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
 .topNav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
   font-size: 30px;
-  margin: 0 auto;
+  margin: 1rem auto;
+}
+
+.logo {
+  margin: 0 0.5rem;
+}
+
+.searchBar {
+  border-radius: 1000px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 60%;
+  height: 50px;
 }/*# sourceMappingURL=styles.css.map */
