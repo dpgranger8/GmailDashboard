@@ -1,10 +1,31 @@
+// Roboto font sampler below
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+// .roboto-<uniquifier> {
+//     font-family: "Roboto", serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+//     font-variation-settings:
+//       "wdth" 100;
+//   }
+
 :root {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", serif;
 }
 
 body {
-    background-color: blue;
-    a {
-        background-color: green;
-    }
+    background-image: url(floral-background.jpg);
 }
+
+.topNav {
+    display: flex;
+    align-items: baseline;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+// spacer {
+//     margin: 0.25rem;
+// }
