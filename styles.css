@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 :root {
   font-family: "Roboto", serif;
-  --no-radius: 50px;
+  --round-corners: 50px;
 }
 
 .material-symbols-outlined {
@@ -45,7 +45,7 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  border-radius: var(--no-radius);
+  border-radius: var(--round-corners);
   width: 60%;
   height: 60px;
   margin: 0.5rem;
@@ -76,5 +76,5 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  border-radius: var(--no-radius);
+  border-radius: var(--round-corners);
 }/*# sourceMappingURL=styles.css.map */
