@@ -1,50 +1,12 @@
-// How to use Roboto font examples below
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-// .roboto-<uniquifier> {
-//     font-family: "Roboto", serif;
-//     font-optical-sizing: auto;
-//     font-weight: <weight>;
-//     font-style: normal;
-//     font-variation-settings:
-//       "wdth" 100;
-//   }
+//Today I learned that sass always compiles things from top to bottom.
+//Always put mixins in another file so every file can have them.
+@use 'sidemenu';
+@use 'mixins' as *;
 
 :root {
     font-family: "Roboto", serif;
     color: white;
     --round-corners: 50px;
-}
-
-@mixin blur-effect {
-    background-color: rgba($color: white, $alpha: 0.2);
-    backdrop-filter: blur(2px);
-}
-
-@mixin left-tab-button {
-    border-style: none;
-    text-align: center;
-    color: white;
-    margin: 0.5rem;
-    background-color: transparent;
-    height: 80%;
-}
-
-@mixin tab-button-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 30px;
-}
-
-@mixin circle-button {
-    border-style: none;
-    text-align: center;
-    color: white;
-    margin: 0.5rem;
-    background-color: transparent;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
@@ -133,78 +95,6 @@ body {
         @include blur-effect;
         border-radius: var(--round-corners);
         padding: 12px 12px;
-    }
-}
-
-.sideMenu {
-    @include blur-effect;
-    width: 80px;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#hamburgerMenu {
-    @include circle-button;
-    width: 100%;
-    height: 60px;
-
-    :hover {
-        @include blur-effect;
-        border-radius: var(--round-corners);
-        padding: 12px 12px;
-    }
-}
-
-sub {
-    color: white;
-    font-size: 1rem;
-}
-
-.mailBtnContainer {
-    @include tab-button-container;
-    padding-top: 20px;
-
-    button {
-        @include left-tab-button;
-
-        :hover {
-            @include blur-effect;
-            border-radius: var(--round-corners);
-            padding: 0px 18px;
-        }
-    }
-}
-
-.chatBtnContainer {
-    @include tab-button-container;
-    padding-top: 45px;
-
-    button {
-        @include left-tab-button;
-
-        :hover {
-            @include blur-effect;
-            border-radius: var(--round-corners);
-            padding: 0px 18px;
-        }
-    }
-}
-
-.meetBtnContainer {
-    @include tab-button-container;
-    padding-top: 45px;
-
-    button {
-        @include left-tab-button;
-
-        :hover {
-            @include blur-effect;
-            border-radius: var(--round-corners);
-            padding: 0px 18px;
-        }
     }
 }
 
