@@ -20,6 +20,7 @@ body {
 }
 
 .topNav {
+  position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -80,6 +81,9 @@ body {
 }
 
 .mainContent {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
@@ -87,6 +91,7 @@ body {
   border-radius: var(--round-corners);
   width: 80%;
   height: auto;
+  margin: 100px 0px 0px 100px;
 }
 
 #emailContainer {
