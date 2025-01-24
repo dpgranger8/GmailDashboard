@@ -21,6 +21,16 @@
     backdrop-filter: blur(2px);
 }
 
+@mixin left-menu-icon {
+    border-style: none;
+    text-align: center;
+    color: white;
+    margin: 0.5rem;
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
 .material-symbols-outlined {
@@ -81,18 +91,22 @@ body {
 }
 
 #hamburgerMenu {
-    border-style: none;
-    text-align: center;
-    color: white;
-    margin: 0.5rem;
-    background-color: transparent;
-    width: 100%;
-    height: 60px;
+    @include left-menu-icon;
 
     :hover {
         @include blur-effect;
         border-radius: var(--round-corners);
         padding: 12px 12px;
+    }
+}
+
+#mailButton {
+    @include left-menu-icon;
+
+    :hover {
+        @include blur-effect;
+        border-radius: var(--round-corners);
+        padding: 12px 18px;
     }
 }
 
@@ -111,39 +125,3 @@ body {
         color: white;
     }
 }
-
-// <!-- HTML !-->
-// <button class="button-1" role="button">Button 1</button>
-
-// /* CSS */
-// .button-1 {
-//   background-color: #EA4C89;
-//   border-radius: 8px;
-//   border-style: none;
-//   box-sizing: border-box;
-//   color: #FFFFFF;
-//   cursor: pointer;
-//   display: inline-block;
-//   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-//   font-size: 14px;
-//   font-weight: 500;
-//   height: 40px;
-//   line-height: 20px;
-//   list-style: none;
-//   margin: 0;
-//   outline: none;
-//   padding: 10px 16px;
-//   position: relative;
-//   text-align: center;
-//   text-decoration: none;
-//   transition: color 100ms;
-//   vertical-align: baseline;
-//   user-select: none;
-//   -webkit-user-select: none;
-//   touch-action: manipulation;
-// }
-
-// .button-1:hover,
-// .button-1:focus {
-//   background-color: #F082AC;
-// }
