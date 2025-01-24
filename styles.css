@@ -80,7 +80,15 @@ body {
   padding: 12px 12px;
 }
 
-#mailButton {
+.mailBtnContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30px;
+  padding-top: 20px;
+}
+.mailBtnContainer button {
   border-style: none;
   text-align: center;
   color: white;
@@ -88,7 +96,7 @@ body {
   background-color: transparent;
   height: 80%;
 }
-#mailButton :hover {
+.mailBtnContainer button :hover {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -96,12 +104,52 @@ body {
   padding: 0px 18px;
 }
 
-.tabButtonContainer {
+.chatBtnContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 30px;
+  padding-top: 45px;
+}
+.chatBtnContainer button {
+  border-style: none;
+  text-align: center;
+  color: white;
+  margin: 0.5rem;
+  background-color: transparent;
+  height: 80%;
+}
+.chatBtnContainer button :hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: var(--round-corners);
+  padding: 0px 18px;
+}
+
+.meetBtnContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30px;
+  padding-top: 45px;
+}
+.meetBtnContainer button {
+  border-style: none;
+  text-align: center;
+  color: white;
+  margin: 0.5rem;
+  background-color: transparent;
+  height: 80%;
+}
+.meetBtnContainer button :hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: var(--round-corners);
+  padding: 0px 18px;
 }
 
 sub {

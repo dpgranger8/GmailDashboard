@@ -30,6 +30,14 @@
     height: 80%;
 }
 
+@mixin tab-button-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
 .material-symbols-outlined {
@@ -106,22 +114,49 @@ body {
     }
 }
 
-#mailButton {
-    @include left-tab-button;
-    
-    :hover {
-        @include blur-effect;
-        border-radius: var(--round-corners);
-        padding: 0px 18px;
+.mailBtnContainer {
+    @include tab-button-container;
+    padding-top: 20px;
+
+    button {
+        @include left-tab-button;
+
+        :hover {
+            @include blur-effect;
+            border-radius: var(--round-corners);
+            padding: 0px 18px;
+        }
     }
 }
 
-.tabButtonContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 30px;
+.chatBtnContainer {
+    @include tab-button-container;
+    padding-top: 45px;
+
+    button {
+        @include left-tab-button;
+
+        :hover {
+            @include blur-effect;
+            border-radius: var(--round-corners);
+            padding: 0px 18px;
+        }
+    }
+}
+
+.meetBtnContainer {
+    @include tab-button-container;
+    padding-top: 45px;
+
+    button {
+        @include left-tab-button;
+
+        :hover {
+            @include blur-effect;
+            border-radius: var(--round-corners);
+            padding: 0px 18px;
+        }
+    }
 }
 
 sub {
@@ -144,6 +179,7 @@ sub {
 #emailContainer {
     width: 400px;
     min-height: 400px;
+
     h2 {
         color: white;
     }
