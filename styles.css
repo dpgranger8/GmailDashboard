@@ -87,4 +87,12 @@ body {
   border-radius: var(--round-corners);
   width: 80%;
   height: auto;
+}
+
+#emailContainer {
+  width: 400px;
+  min-height: 400px;
+}
+#emailContainer h2 {
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
