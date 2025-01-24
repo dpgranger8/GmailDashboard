@@ -13,11 +13,18 @@
 
 :root {
     font-family: "Roboto", serif;
+    --no-radius: 50px;
 }
 
 @mixin blur-effect {
     background-color: rgba($color: white, $alpha: 0.2);
     backdrop-filter: blur(2px);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+.material-symbols-outlined {
+    font-size: 1.75rem;
 }
 
 body {
@@ -36,7 +43,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 1.75rem;
     margin: 0 auto;
 }
 
@@ -57,7 +64,7 @@ body {
 
 .searchBar {
     @include blur-effect;
-    border-radius: 1000px;
+    border-radius: var(--no-radius);
     width: 60%;
     height: 60px;
     margin: 0.5rem;
@@ -67,4 +74,60 @@ body {
     @include blur-effect;
     width: 80px;
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#hamburgerMenu {
+    position: static;
+    border-style: none;
+    text-align: center;
+    color: white;
+    margin: 0.5rem;
+    padding: 12px 12px;
+    background-color: transparent;
+    border: 1px solid black;
+
+    :hover {
+        @include blur-effect;
+        border-radius: var(--no-radius);
+    }
+}
+
+// <!-- HTML !-->
+// <button class="button-1" role="button">Button 1</button>
+
+// /* CSS */
+// .button-1 {
+//   background-color: #EA4C89;
+//   border-radius: 8px;
+//   border-style: none;
+//   box-sizing: border-box;
+//   color: #FFFFFF;
+//   cursor: pointer;
+//   display: inline-block;
+//   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   font-size: 14px;
+//   font-weight: 500;
+//   height: 40px;
+//   line-height: 20px;
+//   list-style: none;
+//   margin: 0;
+//   outline: none;
+//   padding: 10px 16px;
+//   position: relative;
+//   text-align: center;
+//   text-decoration: none;
+//   transition: color 100ms;
+//   vertical-align: baseline;
+//   user-select: none;
+//   -webkit-user-select: none;
+//   touch-action: manipulation;
+// }
+
+// .button-1:hover,
+// .button-1:focus {
+//   background-color: #F082AC;
+// }

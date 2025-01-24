@@ -3,6 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
       <!-- Code below makes Google Roboto font possible -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,8 +11,15 @@
          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
          rel="stylesheet"
       />
-      <!-- End Google code -->
+
+      <!-- Variable Google material icons -->
+      <link
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,home,search,settings"
+         rel="stylesheet"
+      />
+
       <link rel="stylesheet" href="styles.css" />
+      <script defer src="app.js"></script>
       <link
          rel="icon"
          href="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
@@ -21,7 +29,11 @@
    </head>
    <body>
       <nav class="topNav">
-         <nav class="sideMenu"></nav>
+         <nav class="sideMenu">
+            <button id="hamburgerMenu">
+               <span class="material-symbols-outlined">menu</span>
+            </button>
+         </nav>
          <div class="mainContent">
             <div class="logo">
                <img src="GmailIcon.png" width="auto" , height="30" />
