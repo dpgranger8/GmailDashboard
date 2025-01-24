@@ -13,6 +13,7 @@
 
 :root {
     font-family: "Roboto", serif;
+    color: white;
     --round-corners: 50px;
 }
 
@@ -36,6 +37,14 @@
     flex-direction: column;
     width: 100%;
     height: 30px;
+}
+
+@mixin circle-button {
+    border-style: none;
+    text-align: center;
+    color: white;
+    margin: 0.5rem;
+    background-color: transparent;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
@@ -86,6 +95,45 @@ body {
     width: 60%;
     height: 60px;
     margin: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#searchBtn {
+    @include circle-button;
+    width: 60px;
+    height: auto;
+
+    :hover {
+        @include blur-effect;
+        border-radius: var(--round-corners);
+        padding: 12px 12px;
+    }
+}
+
+#searchInput {
+    all: unset;
+    flex-grow: 1;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-size: 1.25rem;
+}
+
+#tuneBtn {
+    @include circle-button;
+    width: 60px;
+    height: auto;
+
+    :hover {
+        @include blur-effect;
+        border-radius: var(--round-corners);
+        padding: 12px 12px;
+    }
 }
 
 .sideMenu {
@@ -99,11 +147,7 @@ body {
 }
 
 #hamburgerMenu {
-    border-style: none;
-    text-align: center;
-    color: white;
-    margin: 0.5rem;
-    background-color: transparent;
+    @include circle-button;
     width: 100%;
     height: 60px;
 
@@ -112,6 +156,11 @@ body {
         border-radius: var(--round-corners);
         padding: 12px 12px;
     }
+}
+
+sub {
+    color: white;
+    font-size: 1rem;
 }
 
 .mailBtnContainer {
@@ -157,11 +206,6 @@ body {
             padding: 0px 18px;
         }
     }
-}
-
-sub {
-    color: white;
-    font-size: 1rem;
 }
 
 .mainContent {

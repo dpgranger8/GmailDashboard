@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 :root {
   font-family: "Roboto", serif;
+  color: white;
   --round-corners: 50px;
 }
 
@@ -50,6 +51,60 @@ body {
   width: 60%;
   height: 60px;
   margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#searchBtn {
+  border-style: none;
+  text-align: center;
+  color: white;
+  margin: 0.5rem;
+  background-color: transparent;
+  width: 60px;
+  height: auto;
+}
+#searchBtn :hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: var(--round-corners);
+  padding: 12px 12px;
+}
+
+#searchInput {
+  all: unset;
+  flex-grow: 1;
+}
+
+::-moz-placeholder {
+  color: white;
+  opacity: 0.5;
+  font-size: 1.25rem;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-size: 1.25rem;
+}
+
+#tuneBtn {
+  border-style: none;
+  text-align: center;
+  color: white;
+  margin: 0.5rem;
+  background-color: transparent;
+  width: 60px;
+  height: auto;
+}
+#tuneBtn :hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: var(--round-corners);
+  padding: 12px 12px;
 }
 
 .sideMenu {
@@ -78,6 +133,11 @@ body {
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
   padding: 12px 12px;
+}
+
+sub {
+  color: white;
+  font-size: 1rem;
 }
 
 .mailBtnContainer {
@@ -150,11 +210,6 @@ body {
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
   padding: 0px 18px;
-}
-
-sub {
-  color: white;
-  font-size: 1rem;
 }
 
 .mainContent {
