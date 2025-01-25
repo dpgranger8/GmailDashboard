@@ -36,3 +36,18 @@
     height: 50px;
     border-radius: var(--round-corners);
 }
+
+@mixin search-bar-style {
+    width: 60%;
+    height: 60px;
+    margin: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin gray-blur-effect {
+    background-color: rgba($color: gray, $alpha: 0.175);
+    backdrop-filter: blur(2px);
+}

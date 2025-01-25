@@ -49,9 +49,19 @@
                <img src="GmailIcon.png" width="auto", height="30" />
                <span>Hawtmail</span>
             </div>
-            <div class="searchBar">
+            <div id="searchBar">
+               <div id="popupMenu">
+                  <div id="searchy">
+                     <span class="material-symbols-outlined searchMenuPopBtn">search</span>
+                     <input id="searchActualInput", type="search", placeholder="Search Mail" onblur="unFocusedSearchBar()"/>
+                     <span class="material-symbols-outlined searchMenuPopBtn">tune</span>
+                  </div>
+                  <div id="searchContent">
+                     <span>HI</span>
+                  </div>
+               </div>
                <span class="material-symbols-outlined searchMenuBtn">search</span>
-               <input id="searchInput", type="search", placeholder="Search Mail"/>
+               <input id="searchInput", type="search", placeholder="Search Mail" onfocus="focusedSearchBar()"/>
                <span class="material-symbols-outlined searchMenuBtn">tune</span>
             </div>
             <div class="status">
