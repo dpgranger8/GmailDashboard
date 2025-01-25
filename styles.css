@@ -104,50 +104,6 @@ sub {
   padding: 0px 18px;
 }
 
-:root {
-  font-family: "Roboto", serif;
-  color: white;
-  --round-corners: 50px;
-}
-
-.material-symbols-outlined {
-  font-size: 1.75rem;
-}
-
-body {
-  background-image: url(art.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-}
-
-.topNav {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  font-size: 1.75rem;
-  margin: 0 auto;
-}
-
-.topMenu {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: space-between;
-}
-
-.logo {
-  margin: 0 1.5rem;
-}
-.logo a {
-  color: white;
-}
-
 .searchBar {
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
@@ -210,6 +166,67 @@ body {
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
   padding: 12px 12px;
+}
+
+.status {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: var(--round-corners);
+  width: 130px;
+  height: 60px;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.status span {
+  font-size: 1rem;
+}
+
+#chevron {
+  font-size: 1.5rem;
+}
+
+:root {
+  font-family: "Roboto", serif;
+  color: white;
+  --round-corners: 50px;
+}
+
+.material-symbols-outlined {
+  font-size: 1.75rem;
+}
+
+body {
+  background-image: url(art.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.topNav {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 1.75rem;
+  margin: 0 auto;
+}
+
+.topMenu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0 1.5rem;
 }
 
 .mainContent {

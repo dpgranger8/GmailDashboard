@@ -1,0 +1,68 @@
+@use 'mixins' as *;
+
+.searchBar {
+    @include blur-effect;
+    border-radius: var(--round-corners);
+    width: 60%;
+    height: 60px;
+    margin: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#searchBtn {
+    @include circle-button;
+    width: 60px;
+    height: auto;
+
+    :hover {
+        @include blur-effect;
+        border-radius: var(--round-corners);
+        padding: 12px 12px;
+    }
+}
+
+#searchInput {
+    all: unset;
+    flex-grow: 1;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-size: 1.25rem;
+}
+
+#tuneBtn {
+    @include circle-button;
+    width: 60px;
+    height: auto;
+
+    :hover {
+        @include blur-effect;
+        border-radius: var(--round-corners);
+        padding: 12px 12px;
+    }
+}
+
+.status {
+    @include blur-effect;
+    border-radius: var(--round-corners);
+    width: 130px;
+    height: 60px;
+    margin: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    span {
+        font-size: 1rem;
+    }
+}
+
+#chevron {
+    font-size: 1.5rem;
+}

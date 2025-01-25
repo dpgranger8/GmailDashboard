@@ -1,6 +1,7 @@
 //Today I learned that sass always compiles things from top to bottom.
 //Always put mixins in another file so every file can have them.
 @use 'sidemenu';
+@use 'searchbar';
 @use 'mixins' as *;
 
 :root {
@@ -45,57 +46,6 @@ body {
 
 .logo {
     margin: 0 1.5rem;
-
-    a {
-        color: white;
-    }
-}
-
-.searchBar {
-    @include blur-effect;
-    border-radius: var(--round-corners);
-    width: 60%;
-    height: 60px;
-    margin: 0.5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#searchBtn {
-    @include circle-button;
-    width: 60px;
-    height: auto;
-
-    :hover {
-        @include blur-effect;
-        border-radius: var(--round-corners);
-        padding: 12px 12px;
-    }
-}
-
-#searchInput {
-    all: unset;
-    flex-grow: 1;
-}
-
-::placeholder {
-    color: white;
-    opacity: 0.5;
-    font-size: 1.25rem;
-}
-
-#tuneBtn {
-    @include circle-button;
-    width: 60px;
-    height: auto;
-
-    :hover {
-        @include blur-effect;
-        border-radius: var(--round-corners);
-        padding: 12px 12px;
-    }
 }
 
 .mainContent {
