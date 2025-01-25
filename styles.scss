@@ -45,7 +45,12 @@ body {
 }
 
 .logo {
+    display: flex;
     margin: 0 1.5rem;
+
+    span {
+        margin-left: 0.5rem;
+    }
 }
 
 .mainContent {
