@@ -1,5 +1,5 @@
 //Today I learned that sass always compiles things from top to bottom.
-//Always put mixins in another file so every file can have them.
+//Always put mixins in a separate file so every other scss file can have them.
 @use 'sidemenu';
 @use 'searchbar';
 @use 'mixins' as *;

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 .sideMenu {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   width: 80px;
@@ -11,20 +11,18 @@
 }
 
 #hamburgerMenu {
-  border-style: none;
-  text-align: center;
-  color: white;
-  margin: 0.5rem;
-  background-color: transparent;
-  width: 100%;
-  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+  margin-top: 10px;
 }
-#hamburgerMenu :hover {
-  background-color: rgba(255, 255, 255, 0.2);
+#hamburgerMenu:hover {
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  border-radius: var(--round-corners);
-  padding: 12px 12px;
 }
 
 sub {
@@ -38,22 +36,7 @@ sub {
   flex-direction: column;
   width: 100%;
   height: 30px;
-  padding-top: 20px;
-}
-.mailBtnContainer button {
-  border-style: none;
-  text-align: center;
-  color: white;
-  margin: 0.5rem;
-  background-color: transparent;
-  height: 80%;
-}
-.mailBtnContainer button :hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border-radius: var(--round-corners);
-  padding: 0px 18px;
+  padding-top: 45px;
 }
 
 .chatBtnContainer {
@@ -64,21 +47,6 @@ sub {
   height: 30px;
   padding-top: 45px;
 }
-.chatBtnContainer button {
-  border-style: none;
-  text-align: center;
-  color: white;
-  margin: 0.5rem;
-  background-color: transparent;
-  height: 80%;
-}
-.chatBtnContainer button :hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border-radius: var(--round-corners);
-  padding: 0px 18px;
-}
 
 .meetBtnContainer {
   display: flex;
@@ -88,24 +56,23 @@ sub {
   height: 30px;
   padding-top: 45px;
 }
-.meetBtnContainer button {
-  border-style: none;
-  text-align: center;
-  color: white;
-  margin: 0.5rem;
-  background-color: transparent;
-  height: 80%;
+
+.sideMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
 }
-.meetBtnContainer button :hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.sideMenuBtn:hover {
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  border-radius: var(--round-corners);
-  padding: 0px 18px;
 }
 
 .searchBar {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
@@ -126,8 +93,8 @@ sub {
   width: 60px;
   height: auto;
 }
-#searchBtn :hover {
-  background-color: rgba(255, 255, 255, 0.2);
+#searchBtn:hover {
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
@@ -160,8 +127,8 @@ sub {
   width: 60px;
   height: auto;
 }
-#tuneBtn :hover {
-  background-color: rgba(255, 255, 255, 0.2);
+#tuneBtn:hover {
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
@@ -169,7 +136,7 @@ sub {
 }
 
 .status {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
@@ -180,12 +147,74 @@ sub {
   align-items: center;
   justify-content: space-evenly;
 }
+.status #activity {
+  background-color: green;
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
+  border-radius: var(--round-corners);
+  margin-left: 0.5rem;
+}
 .status span {
   font-size: 1rem;
 }
-
-#chevron {
+.status #chevron {
   font-size: 1.5rem;
+}
+.status:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#gemini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+}
+#gemini:hover {
+  background-image: linear-gradient(blue, indigo);
+}
+
+.topMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+}
+.topMenuBtn:hover {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.searchMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.searchMenuBtn:hover {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+#profileBackground {
+  margin-right: 10px;
+}
+
+#profile {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--round-corners);
 }
 
 :root {
@@ -234,7 +263,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);

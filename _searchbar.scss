@@ -17,7 +17,7 @@
     width: 60px;
     height: auto;
 
-    :hover {
+    &:hover {
         @include blur-effect;
         border-radius: var(--round-corners);
         padding: 12px 12px;
@@ -40,7 +40,7 @@
     width: 60px;
     height: auto;
 
-    :hover {
+    &:hover {
         @include blur-effect;
         border-radius: var(--round-corners);
         padding: 12px 12px;
@@ -58,11 +58,60 @@
     align-items: center;
     justify-content: space-evenly;
 
+    #activity {
+        background-color: green;
+        width: 12px;
+        height: 12px;
+        border: 1px solid white;
+        border-radius: var(--round-corners);
+        margin-left: 0.5rem;
+    }
+
     span {
         font-size: 1rem;
     }
+
+    #chevron {
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        background-color: rgba($color: white, $alpha: 0.05);
+    }
 }
 
-#chevron {
-    font-size: 1.5rem;
+#gemini {
+    @include top-menu-button;
+
+    &:hover {
+        background-image: linear-gradient(blue, indigo);
+    }
+}
+
+.topMenuBtn {
+    @include top-menu-button;
+
+    &:hover {
+        @include blur-effect;
+    }
+}
+
+.searchMenuBtn {
+    @include top-menu-button;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    &:hover {
+        @include blur-effect;
+    }
+}
+
+#profileBackground {
+    margin-right: 10px;
+}
+
+#profile {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--round-corners);
 }

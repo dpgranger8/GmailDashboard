@@ -1,5 +1,5 @@
 @mixin blur-effect {
-    background-color: rgba($color: white, $alpha: 0.2);
+    background-color: rgba($color: white, $alpha: 0.175);
     backdrop-filter: blur(2px);
 }
 
@@ -26,4 +26,13 @@
     color: white;
     margin: 0.5rem;
     background-color: transparent;
+}
+
+@mixin top-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--round-corners);
 }

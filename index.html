@@ -25,52 +25,55 @@
          href="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
          type="image"
       />
-      <title>Inbox - example@gmail.com</title>
+      <title>Inbox - example@hawtmail.com</title>
    </head>
    <body>
       <nav class="topNav">
          <nav class="sideMenu">
-            <button id="hamburgerMenu">
-               <span class="material-symbols-outlined">menu</span>
-            </button>
+            <span id="hamburgerMenu", class="material-symbols-outlined">menu</span>
             <div class="mailBtnContainer">
-               <button>
-                  <span class="material-symbols-outlined">mail</span>
-               </button>
+               <span class="material-symbols-outlined sideMenuBtn">mail</span>
                <sub>Mail</sub>
             </div>
             <div class="chatBtnContainer">
-               <button>
-                  <span class="material-symbols-outlined">chat</span>
-               </button>
+               <span class="material-symbols-outlined sideMenuBtn">chat</span>
                <sub>Chat</sub>
             </div>
             <div class="meetBtnContainer">
-               <button>
-                  <span class="material-symbols-outlined">videocam</span>
-               </button>
+               <span class="material-symbols-outlined sideMenuBtn">videocam</span>
                <sub>Meet</sub>
             </div>
          </nav>
          <div class="topMenu">
             <div class="logo">
                <img src="GmailIcon.png" width="auto" , height="30" />
-               <span>Gmail</span>
+               <span>Hawtmail</span>
             </div>
             <div class="searchBar">
-               <button id="searchBtn">
-                  <span class="material-symbols-outlined">search</span>
-               </button>
-               <input id="searchInput", type="search", placeholder="Search Mail">
-               <button id="tuneBtn">
-                  <span class="material-symbols-outlined">tune</span>
-               </button>
+               <span class="material-symbols-outlined searchMenuBtn">search</span>
+               <input
+                  id="searchInput"
+                  ,
+                  type="search"
+                  ,
+                  placeholder="Search Mail"
+               />
+               <span class="material-symbols-outlined searchMenuBtn">tune</span>
             </div>
             <div class="status">
-               <span class="material-symbols-outlined">trip_origin</span>
+               <span id="activity"></span>
                <span>Active</span>
-               <span id="chevron", class="material-symbols-outlined">keyboard_arrow_down</span>
+               <span id="chevron" , class="material-symbols-outlined"
+                  >keyboard_arrow_down</span
+               >
             </div>
+            <span class="material-symbols-outlined topMenuBtn">help</span>
+            <span class="material-symbols-outlined topMenuBtn">settings</span>
+            <span id="gemini" , class="material-symbols-outlined">diamond</span>
+            <span class="material-symbols-outlined topMenuBtn">apps</span>
+            <span id="profileBackground" , class="topMenuBtn">
+               <img id="profile" , src="trent.jpg" />
+            </span>
          </div>
       </nav>
       <div class="mainContent">
@@ -78,9 +81,7 @@
             <div id="emailContainerOptions">
                <h2>Hello</h2>
             </div>
-            <div class="emailItem">
-               
-            </div>
+            <div class="emailItem"></div>
          </div>
       </div>
    </body>
