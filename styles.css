@@ -232,6 +232,7 @@ sub {
   all: unset;
   color: black;
   flex-grow: 1;
+  font-size: 20px;
 }
 #searchActualInput::-moz-placeholder {
   color: black;
@@ -251,6 +252,48 @@ sub {
 #searchContent {
   color: black;
   flex-grow: 1;
+  width: 100%;
+}
+
+#quickSearchActions {
+  height: auto;
+  border-top: 2px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+  margin: 10px 0;
+  padding-left: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttony {
+  all: unset;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 5px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.buttony:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.recent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+.recent:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.recentText {
+  flex-grow: 1;
+  margin-left: 20px;
 }
 
 :root {

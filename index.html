@@ -50,6 +50,7 @@
                <span>Hawtmail</span>
             </div>
             <div id="searchBar">
+               <!--pop-out search bar-->
                <div id="popupMenu">
                   <div id="searchy">
                      <span class="material-symbols-outlined searchMenuPopBtn">search</span>
@@ -57,9 +58,17 @@
                      <span class="material-symbols-outlined searchMenuPopBtn">tune</span>
                   </div>
                   <div id="searchContent">
-                     <span>HI</span>
+                     <div id="quickSearchActions">
+                        <button class="buttony">Has attachment</button>
+                        <button class="buttony">Last 7 days</button>
+                        <button class="buttony">From me</button>
+                     </div>
+                     <div class="recents">
+                        <!--list of recents goes here after script runs-->
+                     </div>
                   </div>
                </div>
+               <!--fake search bar-->
                <span class="material-symbols-outlined searchMenuBtn">search</span>
                <input id="searchInput", type="search", placeholder="Search Mail" onfocus="focusedSearchBar()"/>
                <span class="material-symbols-outlined searchMenuBtn">tune</span>
