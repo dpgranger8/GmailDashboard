@@ -20,19 +20,8 @@ const recentSearches = [
     "re: just one more feature"
 ];
 
-class Spacer extends HTMLElement {
-    constructor() {
-        super();
-        this.style.display = "block"; // Ensures it behaves like a block-level element
-        this.style.width = "100%";
-        this.style.height = "5px";
-        this.style.background = "transparent";
-    }
-}
-
 document.addEventListener('DOMContentLoaded', function () {
     insertRecents();
-    customElements.define('custom-spacer', Spacer);
     insertEmails();
 })
 
@@ -134,7 +123,6 @@ function insertEmails() {
         emailItem.appendChild(checkSpan);
         emailItem.appendChild(starSpan);
         emailItem.appendChild(sender);
-        emailItem.appendChild(spacer.cloneNode());
         emailItem.appendChild(content);
         emailItem.appendChild(spacer.cloneNode());
         emailItem.appendChild(date);

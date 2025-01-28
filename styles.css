@@ -312,6 +312,9 @@ sub {
   color: gray;
   margin-right: 15px;
 }
+.emailItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
 
 .spacer {
   margin: 20px auto;
@@ -319,6 +322,7 @@ sub {
 
 .sender {
   font-weight: bold;
+  flex: 0 0 20%;
 }
 
 :root {

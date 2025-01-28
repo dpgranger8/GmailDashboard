@@ -33,6 +33,10 @@
         color: gray;
         margin-right: 15px;
     }
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba($color: black, $alpha: 0.7)
+    }
 }
 
 .spacer {
@@ -41,6 +45,7 @@
 
 .sender {
     font-weight: bold;
+    flex: 0 0 20%;
 }
 
 // #emailContainer {
