@@ -5,7 +5,7 @@
 .mainContent {
     display: flex;
     @include blur-effect;
-    border-radius: var(--round-corners);
+    border-radius: 20px;
     width: auto;
     height: 100%;
     margin-right: 20px;
@@ -70,6 +70,8 @@
 
 .emailDate {
     margin-left: auto;
+    font-size: 14px;
+
     p {
         margin: 0px;
         padding: 2px 2px;

@@ -24,17 +24,7 @@ sub {
     font-size: 1rem;
 }
 
-.mailBtnContainer {
-    @include tab-button-container;
-    padding-top: 45px;
-}
-
-.chatBtnContainer {
-    @include tab-button-container;
-    padding-top: 45px;
-}
-
-.meetBtnContainer {
+.sideBtnContainer {
     @include tab-button-container;
     padding-top: 45px;
 }

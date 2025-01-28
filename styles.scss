@@ -69,3 +69,62 @@ body {
     flex-direction: column;
     flex-grow: 1;
 }
+
+.columnContainerYay {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.mailboxButtons {
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.compose {
+    all: unset;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 5px;
+    font-size: 18px;
+    background-color: white;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.composeText {
+    margin: 0 1rem;
+}
+
+.editIcon {
+    color: gray;
+}
+
+.tabButtons {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.tabButton {
+    margin: 0rem 1rem;
+}
+
+.tabBtnContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: var(--round-corners);
+    padding: 0.25rem;
+
+    sub {
+        font-size: 18px;
+    }
+
+    &:hover {
+        @include blur-effect;
+    }
+}
