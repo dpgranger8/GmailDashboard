@@ -3,6 +3,7 @@
 //Jacob code below
 
 #mainContent {
+    position: relative;
     display: flex;
     flex-direction: column;
     @include blur-effect;
@@ -20,7 +21,7 @@
     align-items: center;
     justify-content: center;
     height: 30px;
-    background-color: rgba($color: white, $alpha: 0.7);
+    background-color: rgba($color: white, $alpha: 0.5);
     padding-left: 20px;
     padding-right: 20px;
 
@@ -46,6 +47,25 @@
 .sender {
     font-weight: bold;
     flex: 0 0 20%;
+}
+
+.mainContentHeader {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:rgba($color: white, $alpha: 0.7);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    span {
+        color: rgba($color: black, $alpha: 0.7);
+        padding: 20px
+    }
 }
 
 // #emailContainer {
