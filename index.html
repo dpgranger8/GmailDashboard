@@ -25,24 +25,66 @@
          href="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
          type="image"
       />
-      <title>Inbox - example@gmail.com</title>
+      <title>Inbox - example@hawtmail.com</title>
    </head>
    <body>
       <nav class="topNav">
          <nav class="sideMenu">
-            <button id="hamburgerMenu">
-               <span class="material-symbols-outlined">menu</span>
-            </button>
-            <button id="mailButton">
-               <span class="material-symbols-outlined">mail</span>
-            </button>
+            <span id="hamburgerMenu", class="material-symbols-outlined">menu</span>
+            <div class="mailBtnContainer">
+               <span class="material-symbols-outlined sideMenuBtn">mail</span>
+               <sub>Mail</sub>
+            </div>
+            <div class="chatBtnContainer">
+               <span class="material-symbols-outlined sideMenuBtn">chat</span>
+               <sub>Chat</sub>
+            </div>
+            <div class="meetBtnContainer">
+               <span class="material-symbols-outlined sideMenuBtn">videocam</span>
+               <sub>Meet</sub>
+            </div>
          </nav>
          <div class="topMenu">
             <div class="logo">
-               <img src="GmailIcon.png" width="auto" , height="30" />
-               <a>Gmail</a>
+               <img src="GmailIcon.png" width="auto", height="30" />
+               <span>Hawtmail</span>
             </div>
-            <div class="searchBar"></div>
+            <div id="searchBar">
+               <!--pop-out search bar-->
+               <div id="popupMenu">
+                  <div id="searchy">
+                     <span class="material-symbols-outlined searchMenuPopBtn">search</span>
+                     <input id="searchActualInput", type="search", placeholder="Search Mail" onblur="unFocusedSearchBar()"/>
+                     <span class="material-symbols-outlined searchMenuPopBtn">tune</span>
+                  </div>
+                  <div id="searchContent">
+                     <div id="quickSearchActions">
+                        <button class="buttony">Has attachment</button>
+                        <button class="buttony">Last 7 days</button>
+                        <button class="buttony">From me</button>
+                     </div>
+                     <div class="recents">
+                        <!--list of recents goes here after script runs-->
+                     </div>
+                  </div>
+               </div>
+               <!--fake search bar-->
+               <span class="material-symbols-outlined searchMenuBtn">search</span>
+               <input id="searchInput", type="search", placeholder="Search Mail" onfocus="focusedSearchBar()"/>
+               <span class="material-symbols-outlined searchMenuBtn">tune</span>
+            </div>
+            <div class="status">
+               <span id="activity"></span>
+               <span>Active</span>
+               <span id="chevron", class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+               <span class="material-symbols-outlined topMenuBtn addMargin">help</span>
+               <span class="material-symbols-outlined topMenuBtn addMargin">settings</span>
+               <span id="gemini", class="material-symbols-outlined addMargin">diamond</span>
+               <span class="material-symbols-outlined topMenuBtn addMargin">apps</span>
+               <span id="profileBackground", class="topMenuBtn addMargin">
+                  <img id="profile", src="trent.jpg" />
+               </span>
          </div>
       </nav>
       <div class="mainContent">
@@ -50,9 +92,7 @@
             <div id="emailContainerOptions">
                <h2>Hello</h2>
             </div>
-            <div class="emailItem">
-               
-            </div>
+            <div class="emailItem"></div>
          </div>
       </div>
    </body>

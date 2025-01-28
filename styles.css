@@ -1,6 +1,304 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+.sideMenu {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hamburgerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+  margin-top: 10px;
+}
+#hamburgerMenu:hover {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+sub {
+  color: white;
+  font-size: 1rem;
+}
+
+.mailBtnContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30px;
+  padding-top: 45px;
+}
+
+.chatBtnContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30px;
+  padding-top: 45px;
+}
+
+.meetBtnContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30px;
+  padding-top: 45px;
+}
+
+.sideMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+}
+.sideMenuBtn:hover {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+#searchBar {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 60%;
+  height: 60px;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--round-corners);
+  position: relative;
+  z-index: 2;
+}
+
+#searchInput {
+  all: unset;
+  flex-grow: 1;
+}
+
+::-moz-placeholder {
+  color: white;
+  opacity: 0.5;
+  font-size: 1.25rem;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-size: 1.25rem;
+}
+
+.status {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: var(--round-corners);
+  width: 130px;
+  height: 60px;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.status #activity {
+  background-color: green;
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
+  border-radius: var(--round-corners);
+  margin-left: 0.5rem;
+}
+.status span {
+  font-size: 1rem;
+}
+.status #chevron {
+  font-size: 1.5rem;
+}
+.status:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#gemini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+}
+#gemini:hover {
+  background-image: linear-gradient(blue, indigo);
+}
+
+.topMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+}
+.topMenuBtn:hover {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.searchMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.searchMenuBtn:hover {
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+#profileBackground {
+  margin-right: 15px;
+}
+
+#profile {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--round-corners);
+}
+
+.addMargin {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#popupMenu {
+  width: 60%;
+  height: 60px;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  display: none;
+  background-color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.searchMenuPopBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--round-corners);
+  border-radius: var(3px);
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black;
+}
+.searchMenuPopBtn:hover {
+  background-color: rgba(128, 128, 128, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+#searchActualInput {
+  all: unset;
+  color: black;
+  flex-grow: 1;
+  font-size: 20px;
+}
+#searchActualInput::-moz-placeholder {
+  color: black;
+}
+#searchActualInput::placeholder {
+  color: black;
+}
+
+#searchy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+
+#searchContent {
+  color: black;
+  flex-grow: 1;
+  width: 100%;
+}
+
+#quickSearchActions {
+  height: auto;
+  border-top: 2px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+  margin: 10px 0;
+  padding-left: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttony {
+  all: unset;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 5px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.buttony:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.recent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+.recent:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.recentText {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
 :root {
   font-family: "Roboto", serif;
+  color: white;
   --round-corners: 50px;
 }
 
@@ -36,65 +334,11 @@ body {
 }
 
 .logo {
+  display: flex;
   margin: 0 1.5rem;
 }
-.logo a {
-  color: white;
-}
-
-.searchBar {
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border-radius: var(--round-corners);
-  width: 60%;
-  height: 60px;
-  margin: 0.5rem;
-}
-
-.sideMenu {
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  width: 80px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#hamburgerMenu {
-  border-style: none;
-  text-align: center;
-  color: white;
-  margin: 0.5rem;
-  background-color: transparent;
-  width: 100%;
-  height: 60px;
-}
-#hamburgerMenu :hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border-radius: var(--round-corners);
-  padding: 12px 12px;
-}
-
-#mailButton {
-  border-style: none;
-  text-align: center;
-  color: white;
-  margin: 0.5rem;
-  background-color: transparent;
-  width: 100%;
-  height: 60px;
-}
-#mailButton :hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border-radius: var(--round-corners);
-  padding: 12px 18px;
+.logo span {
+  margin-left: 0.5rem;
 }
 
 .mainContent {
@@ -102,7 +346,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
