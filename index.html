@@ -30,7 +30,7 @@
    <body>
       <nav class="topNav">
          <nav class="sideMenu">
-            <span id="hamburgerMenu", class="material-symbols-outlined">menu</span>
+            <span id="hamburgerMenu", class="material-symbols-outlined" onclick="clickedHamburger()">menu</span>
             <div class="sideBtnContainer">
                <span class="material-symbols-outlined sideMenuBtn">mail</span>
                <sub>Mail</sub>
@@ -50,7 +50,7 @@
                   <img src="GmailIcon.png" width="auto", height="30" />
                   <span>Hawtmail</span>
                </div>
-               <div class="mailboxButtons">
+               <div id="mailboxButtons">
                   <button class="compose">
                      <span class="material-symbols-outlined editIcon">edit</span>
                      <span class="composeText">Compose</span>
@@ -130,10 +130,10 @@
                      <img id="profile", src="trent.jpg" />
                   </span>
                </div>
-               <div class="mainContent">
+               <div id="mainContent">
                   <div id="emailContainer">
                      <div id="emailContainerOptions">
-                        <h2>(Header)</h2>
+                        <h2>{Header}</h2>
                      </div>
                      <div class="emailItem">
                         <div class="emailName">

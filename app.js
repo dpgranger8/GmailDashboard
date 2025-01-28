@@ -50,3 +50,18 @@ function insertRecents() {
         recentsContainer.appendChild(recentDiv);
     });
 }
+
+const mainContent = document.getElementById("mainContent");
+const mailBoxButtons = document.getElementById("mailboxButtons");
+
+function clickedHamburger() {
+    const currentMarginLeft = window.getComputedStyle(mainContent).marginLeft;
+
+    if (currentMarginLeft === "-290px") {
+        mailBoxButtons.style.opacity = "1";
+        mainContent.style.marginLeft = "0px";
+    } else {
+        mailBoxButtons.style.opacity = "0";
+        mainContent.style.marginLeft = "-290px";
+    }
+}

@@ -66,7 +66,7 @@ sub {
   justify-content: space-between;
   border-radius: var(--round-corners);
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 #searchInput {
@@ -280,7 +280,7 @@ sub {
   margin-left: 20px;
 }
 
-.mainContent {
+#mainContent {
   display: flex;
   background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
@@ -290,6 +290,8 @@ sub {
   height: 100%;
   margin-right: 20px;
   margin-bottom: 20px;
+  transition: margin-left 0.2s ease-in-out;
+  z-index: 0;
 }
 
 #emailContainer {
@@ -420,11 +422,12 @@ body {
   margin-right: 1rem;
 }
 
-.mailboxButtons {
+#mailboxButtons {
   display: flex;
   margin-left: 1rem;
   flex-direction: column;
   align-items: flex-start;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .compose {
@@ -454,6 +457,7 @@ body {
 
 .tabButton {
   margin: 0rem 1rem;
+  font-size: 22px;
 }
 
 .tabBtnContainer {
