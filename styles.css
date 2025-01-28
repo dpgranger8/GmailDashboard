@@ -296,6 +296,80 @@ sub {
   margin-left: 20px;
 }
 
+.mainContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.175);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: var(--round-corners);
+  width: 80%;
+  height: auto;
+  margin: 100px 0px 0px 100px;
+}
+
+#emailContainer {
+  width: 92%;
+  min-height: 400px;
+}
+#emailContainer h2 {
+  color: white;
+}
+
+#emailContainerOptions {
+  margin: 20px 0px 0px 44px;
+}
+
+.emailItem {
+  color: black;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  margin: 0px 0px 3px 40px;
+  padding: 5px 5px 5px 5px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth animation */
+}
+.emailItem:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+  cursor: pointer; /* Change cursor to hand symbol */
+  transform: translateY(-2px); /* Optional: Adds a slight lift effect */
+}
+
+.emailName {
+  width: 200px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+}
+.emailName p {
+  margin: 0px;
+  padding: 2px 2px;
+}
+
+.emailText {
+  width: 800px;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0px;
+}
+.emailText p {
+  margin: 0px;
+  padding: 2px 2px;
+}
+
+.emailDate {
+  margin-left: auto;
+}
+.emailDate p {
+  margin: 0px;
+  padding: 2px 2px;
+}
+
 :root {
   font-family: "Roboto", serif;
   color: white;
@@ -341,75 +415,9 @@ body {
   margin-left: 0.5rem;
 }
 
-.mainContent {
-  position: absolute;
-  top: 0;
-  left: 0;
+.topRightMenu {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.175);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  border-radius: var(--round-corners);
-  width: 80%;
-  height: auto;
-  margin: 100px 0px 0px 100px;
-}
-
-#emailContainer {
-  width: 92%;
-  min-height: 400px;
-}
-#emailContainer h2 {
-  color: white;
-}
-
-#emailContainerOptions {
-  margin: 20px 0px 0px 44px;
-}
-
-.emailItem {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: white;
-  width: 100%;
-  margin: 0px 0px 3px 40px;
-  padding: 5px 5px 5px 5px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth animation */
-}
-.emailItem:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
-  cursor: pointer; /* Change cursor to hand symbol */
-  transform: translateY(-2px); /* Optional: Adds a slight lift effect */
-}
-
-.emailName {
-  width: 200px;
-  margin: 0px;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0px;
-}
-.emailName p {
-  margin: 0px;
-  padding: 2px 2px;
-}
-
-.emailText {
-  width: 800px;
-  margin: 0px;
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0px;
-}
-.emailText p {
-  margin: 0px;
-  padding: 2px 2px;
-}
-
-.emailDate {
-  margin-left: auto;
-}
-.emailDate p {
-  margin: 0px;
-  padding: 2px 2px;
+  flex-grow: 1;
 }/*# sourceMappingURL=styles.css.map */
