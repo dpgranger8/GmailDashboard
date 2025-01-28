@@ -26,6 +26,10 @@
          type="image"
       />
       <title>Inbox - example@hawtmail.com</title>
+      <script>
+         /*to prevent Firefox FOUC, this must be here*/
+         let FF_FOUC_FIX;
+       </script>
    </head>
    <body>
       <nav class="topNav">
@@ -131,66 +135,6 @@
                   </span>
                </div>
                <div id="mainContent">
-                  <div id="emailContainer">
-                     <div id="emailContainerOptions">
-                        <h2>{Header}</h2>
-                     </div>
-                     <div class="emailItem">
-                        <div class="emailName">
-                           <p>Discord</p>
-                        </div>
-                        <div class="emailText">
-                           <p>You have been invited to a channel! This is great news because blah blah blaaaaaaah</p>
-                        </div>
-                        <div class="emailDate">
-                           <p>Jan 24</p>
-                        </div>
-                     </div>
-                     <div class="emailItem">
-                        <div class="emailName">
-                           <p>Discord</p>
-                        </div>
-                        <div class="emailText">
-                           <p>Confirm your email to get started with discord! Click the following link blah blah blah</p>
-                        </div>
-                        <div class="emailDate">
-                           <p>Jan 24</p>
-                        </div>
-                     </div>
-                     <div class="emailItem">
-                        <div class="emailName">
-                           <p>Gmail</p>
-                        </div>
-                        <div class="emailText">
-                           <p>A new device has logged into your Gmail. Make sure this device is secure blah blah blah</p>
-                        </div>
-                        <div class="emailDate">
-                           <p>Jan 21</p>
-                        </div>
-                     </div>
-                     <div class="emailItem">
-                        <div class="emailName">
-                           <p>Steam</p>
-                        </div>
-                        <div class="emailText">
-                           <p>Confirm you email by clicking this link. After you confirm blah blah blah</p>
-                        </div>
-                        <div class="emailDate">
-                           <p>Jan 20</p>
-                        </div>
-                     </div>
-                     <div class="emailItem">
-                        <div class="emailName">
-                           <p>Gmail</p>
-                        </div>
-                        <div class="emailText">
-                           <p>Welcome to Gmail!</p>
-                        </div>
-                        <div class="emailDate">
-                           <p>Jan 18</p>
-                        </div>
-                     </div>
-                  </div>
                </div>
             </div>
          </div>

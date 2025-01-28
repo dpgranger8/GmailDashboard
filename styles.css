@@ -282,6 +282,7 @@ sub {
 
 #mainContent {
   display: flex;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -290,69 +291,34 @@ sub {
   height: 100%;
   margin-right: 20px;
   margin-bottom: 20px;
+  padding-top: 100px;
   transition: margin-left 0.2s ease-in-out;
-  z-index: 0;
-}
-
-#emailContainer {
-  width: 92%;
-  min-height: 400px;
-}
-#emailContainer h2 {
-  color: white;
-}
-
-#emailContainerOptions {
-  margin: 20px 0px 0px 44px;
 }
 
 .emailItem {
-  color: black;
   display: flex;
   align-items: center;
-  background-color: white;
-  width: 100%;
-  margin: 0px 0px 3px 40px;
-  padding: 5px 5px 5px 5px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth animation */
+  justify-content: center;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.emailItem:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
-  cursor: pointer; /* Change cursor to hand symbol */
-  transform: translateY(-2px); /* Optional: Adds a slight lift effect */
+.emailItem p {
+  font-size: 16px;
+  color: black;
 }
-
-.emailName {
-  width: 200px;
-  margin: 0px;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0px;
-}
-.emailName p {
-  margin: 0px;
-  padding: 2px 2px;
+.emailItem span {
+  color: gray;
+  margin-right: 15px;
 }
 
-.emailText {
-  width: 800px;
-  margin: 0px;
-  font-size: 14px;
-  font-weight: 300;
-  margin: 0px;
-}
-.emailText p {
-  margin: 0px;
-  padding: 2px 2px;
+.spacer {
+  margin: 20px auto;
 }
 
-.emailDate {
-  margin-left: auto;
-  font-size: 14px;
-}
-.emailDate p {
-  margin: 0px;
-  padding: 2px 2px;
+.sender {
+  font-weight: bold;
 }
 
 :root {

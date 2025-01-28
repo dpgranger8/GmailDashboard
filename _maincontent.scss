@@ -4,78 +4,129 @@
 
 #mainContent {
     display: flex;
+    flex-direction: column;
     @include blur-effect;
     border-radius: 20px;
     width: auto;
     height: 100%;
     margin-right: 20px;
     margin-bottom: 20px;
+    padding-top: 100px;
     transition: margin-left 0.2s ease-in-out;
-    z-index: 0;
-}
-
-#emailContainer {
-    width: 92%;
-    min-height: 400px;
-
-    h2 {
-        color: white;
-    }
-}
-
-#emailContainerOptions {
-    margin: 20px 0px 0px 44px;
 }
 
 .emailItem {
-    color: black;
     display: flex;
     align-items: center;
-    background-color: white;
-    width: 100%;
-    margin: 0px 0px 3px 40px;
-    padding: 5px 5px 5px 5px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth animation */
-
-    &:hover {
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
-        cursor: pointer; /* Change cursor to hand symbol */
-        transform: translateY(-2px); /* Optional: Adds a slight lift effect */
-    }
-}
-
-.emailName {
-    //background-color: white;
-    width: 200px;
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0px;
-    p {
-        margin: 0px;
-        padding: 2px 2px;
-    }
-}
-
-.emailText {
-    //background-color: rgb(255, 199, 199);
-    width: 800px;
-    margin: 0px;
-    font-size: 14px;
-    font-weight: 300;
-    margin: 0px;
-    p {
-        margin: 0px;
-        padding: 2px 2px;
-    }
-}
-
-.emailDate {
-    margin-left: auto;
-    font-size: 14px;
+    justify-content: center;
+    height: 30px;
+    background-color: rgba($color: white, $alpha: 0.7);
+    padding-left: 20px;
+    padding-right: 20px;
 
     p {
-        margin: 0px;
-        padding: 2px 2px;
+        font-size: 16px;
+        color: black;
+    }
+
+    span {
+        color: gray;
+        margin-right: 15px;
     }
 }
+
+.spacer {
+    margin: 20px auto;
+}
+
+.sender {
+    font-weight: bold;
+}
+
+// #emailContainer {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     min-height: 400px;
+
+//     h2 {
+//         color: white;
+//     }
+// }
+
+// .emailItem {
+//     width: 100%;
+//     color: black;
+//     display: block;
+//     align-items: center;
+//     background-color: white;
+//     //padding: 5px 5px 5px 5px;
+//     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth animation */
+
+//     &:hover {
+//         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+//         cursor: pointer; /* Change cursor to hand symbol */
+//         transform: translateY(-2px); /* Optional: Adds a slight lift effect */
+//     }
+// }
+
+// <div id="emailContainer">
+//                      <div id="emailContainerOptions">
+//                         <h2>{Header}</h2>
+//                      </div>
+//                      <div class="emailItem">
+//                         <div class="emailName">
+//                            <p>Discord</p>
+//                         </div>
+//                         <div class="emailText">
+//                            <p>You have been invited to a channel! This is great news because blah blah blaaaaaaah</p>
+//                         </div>
+//                         <div class="emailDate">
+//                            <p>Jan 24</p>
+//                         </div>
+//                      </div>
+//                      <div class="emailItem">
+//                         <div class="emailName">
+//                            <p>Discord</p>
+//                         </div>
+//                         <div class="emailText">
+//                            <p>Confirm your email to get started with discord! Click the following link blah blah blah</p>
+//                         </div>
+//                         <div class="emailDate">
+//                            <p>Jan 24</p>
+//                         </div>
+//                      </div>
+//                      <div class="emailItem">
+//                         <div class="emailName">
+//                            <p>Gmail</p>
+//                         </div>
+//                         <div class="emailText">
+//                            <p>A new device has logged into your Gmail. Make sure this device is secure blah blah blah</p>
+//                         </div>
+//                         <div class="emailDate">
+//                            <p>Jan 21</p>
+//                         </div>
+//                      </div>
+//                      <div class="emailItem">
+//                         <div class="emailName">
+//                            <p>Steam</p>
+//                         </div>
+//                         <div class="emailText">
+//                            <p>Confirm you email by clicking this link. After you confirm blah blah blah</p>
+//                         </div>
+//                         <div class="emailDate">
+//                            <p>Jan 20</p>
+//                         </div>
+//                      </div>
+//                      <div class="emailItem">
+//                         <div class="emailName">
+//                            <p>Gmail</p>
+//                         </div>
+//                         <div class="emailText">
+//                            <p>Welcome to Gmail!</p>
+//                         </div>
+//                         <div class="emailDate">
+//                            <p>Jan 18</p>
+//                         </div>
+//                      </div>
+//                   </div>
