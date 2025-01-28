@@ -3,15 +3,13 @@
 //Jacob code below
 
 .mainContent {
-    position: absolute;
-    top: 0;
-    right: 0;
     display: flex;
     @include blur-effect;
     border-radius: var(--round-corners);
-    width: 80%;
-    height: auto;
-    margin: 100px 0px 0px 100px;
+    width: auto;
+    height: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 #emailContainer {

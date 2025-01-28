@@ -17,7 +17,7 @@
   width: 50px;
   height: 50px;
   border-radius: var(--round-corners);
-  margin-top: 10px;
+  margin-top: 15px;
 }
 #hamburgerMenu:hover {
   background-color: rgba(255, 255, 255, 0.175);
@@ -75,10 +75,11 @@ sub {
   background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  width: 60%;
   height: 60px;
-  margin: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: space-between;
   border-radius: var(--round-corners);
@@ -108,7 +109,7 @@ sub {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
-  width: 130px;
+  width: 120px;
   height: 60px;
   margin: 0.5rem;
   display: flex;
@@ -191,10 +192,11 @@ sub {
 }
 
 #popupMenu {
-  width: 60%;
   height: 60px;
-  margin: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: space-between;
   border-radius: 30px;
@@ -297,17 +299,15 @@ sub {
 }
 
 .mainContent {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: flex;
   background-color: rgba(255, 255, 255, 0.175);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: var(--round-corners);
-  width: 80%;
-  height: auto;
-  margin: 100px 0px 0px 100px;
+  width: auto;
+  height: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 #emailContainer {
@@ -402,14 +402,15 @@ body {
 
 .topMenu {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-grow: 1;
   justify-content: space-between;
 }
 
 .logo {
   display: flex;
-  margin: 0 1.5rem;
+  margin: 1.5rem;
+  width: 15vw;
 }
 .logo span {
   margin-left: 0.5rem;
@@ -419,5 +420,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
+}
+
+.anotherContainerYay {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }/*# sourceMappingURL=styles.css.map */
