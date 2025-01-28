@@ -1,0 +1,191 @@
+@use 'mixins' as *;
+
+#searchBar {
+    @include blur-effect;
+    @include search-bar-style;
+    border-radius: var(--round-corners);
+    position: relative;
+    z-index: 2;
+}
+
+#searchInput {
+    all: unset;
+    flex-grow: 1;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-size: 1.25rem;
+}
+
+.status {
+    @include blur-effect;
+    border-radius: var(--round-corners);
+    width: 130px;
+    height: 60px;
+    margin: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    #activity {
+        background-color: green;
+        width: 12px;
+        height: 12px;
+        border: 1px solid white;
+        border-radius: var(--round-corners);
+        margin-left: 0.5rem;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+    #chevron {
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        background-color: rgba($color: white, $alpha: 0.05);
+    }
+}
+
+#gemini {
+    @include top-menu-button;
+
+    &:hover {
+        background-image: linear-gradient(blue, indigo);
+    }
+}
+
+.topMenuBtn {
+    @include top-menu-button;
+
+    &:hover {
+        @include blur-effect;
+    }
+}
+
+.searchMenuBtn {
+    @include top-menu-button;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    &:hover {
+        @include blur-effect;
+    }
+}
+
+#profileBackground {
+    margin-right: 15px;
+}
+
+#profile {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--round-corners);
+}
+
+.addMargin {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#popupMenu {
+    @include search-bar-style;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    display: none;
+    background-color: white;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.searchMenuPopBtn {
+    @include top-menu-button;
+    border-radius: var(3px);
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+
+    &:hover {
+        @include gray-blur-effect;
+    }
+}
+
+#searchActualInput {
+    all: unset;
+    color: black;
+    flex-grow: 1;
+    font-size: 20px;
+
+    &::placeholder {
+        color: black;
+    }
+}
+
+#searchy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#searchContent {
+    color: black;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#quickSearchActions {
+    height: auto;
+    border-top: 2px solid rgba($color: grey, $alpha: 0.2);
+    border-bottom: 2px solid rgba($color: grey, $alpha: 0.2);
+    margin: 10px 0;
+    padding-left: 8px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttony {
+    all: unset;
+    border: 1px solid rgba($color: black, $alpha: 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 18px;
+    color: rgba($color: black, $alpha: 0.8);
+
+    &:hover {
+        background-color: rgba($color: grey, $alpha: 0.1);
+    }
+}
+
+.recent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    font-size: 18px;
+    padding: 10px 15px;
+
+    &:hover {
+        background-color: rgba($color: grey, $alpha: 0.1);
+    }
+}
+
+.recentText {
+    flex-grow: 1;
+    margin-left: 20px;
+}
